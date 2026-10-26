@@ -1,0 +1,188 @@
+# ============================================================
+# .gitignore — Reusable web-project template
+# Stack: Node.js · React · TypeScript · Vite
+# Keep source code and package-manager lockfiles versioned.
+# ============================================================
+
+# ------------------------------------------------------------
+# Dependencies and local package-manager caches
+# ------------------------------------------------------------
+node_modules/
+.pnp
+.pnp.*
+/.npm/
+/.pnpm-store/
+
+# ------------------------------------------------------------
+# Build output and bundler/tool caches
+# ------------------------------------------------------------
+/dist/
+/build/
+/out/
+.vite/
+.cache/
+.parcel-cache/
+.rollup.cache/
+.turbo/
+.eslintcache/
+.stylelintcache
+vite.config.*.timestamp-*
+
+# TypeScript incremental build information
+*.tsbuildinfo
+
+# ------------------------------------------------------------
+# Environment variables and sensitive credentials
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+
+# Uncomment if you intentionally version these templates too:
+# !.env.sample
+# !.env.template
+
+# Private keys and local credentials
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+credentials.json
+secret.*
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------
+# Editors and IDEs
+# ------------------------------------------------------------
+# VS Code: share extension recommendations by default.
+.vscode/*
+!.vscode/extensions.json
+
+# Uncomment only when these contain intentionally shared settings:
+# !.vscode/settings.json
+# !.vscode/launch.json
+# !.vscode/tasks.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+.fleet/
+
+# Sublime Text
+*.sublime-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+Icon?
+
+# ------------------------------------------------------------
+# Tests, coverage and generated reports
+# ------------------------------------------------------------
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+cypress/videos/
+cypress/screenshots/
+
+# ------------------------------------------------------------
+# Temporary files and merge/rebase leftovers
+# ------------------------------------------------------------
+.history/
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.orig
+*.rej
+*.tgz
+
+# ============================================================
+# OPTIONAL RULES — enable only when relevant to the project
+# ============================================================
+
+# Library build output: only if these are generated folders.
+# /lib/
+# /esm/
+# /cjs/
+
+# Other frameworks/build tools
+# .next/             # Next.js
+# .nuxt/             # Nuxt
+# .output/           # Nuxt/Nitro and other tools
+# .angular/          # Angular
+# .astro/            # Astro
+# .svelte-kit/       # SvelteKit
+# storybook-static/  # Storybook build output
+
+# Deployment/local tooling metadata
+# .vercel/
+# .netlify/
+# .serverless/
+# .wrangler/
+
+# Yarn Berry — only if NOT using Zero-Installs.
+# .yarn/cache/
+# .yarn/unplugged/
+# .yarn/build-state.yml
+# .yarn/install-state.gz
+
+# Python
+# __pycache__/
+# *.py[cod]
+# .venv/
+# venv/
+# .pytest_cache/
+# .mypy_cache/
+# .ruff_cache/
+# .coverage
+# .coverage.*
+# htmlcov/
+# *.ipynb_checkpoints/
+
+# Go
+# /bin/
+# *.exe
+# *.test
+# *.out
+
+# Rust
+# /target/
+# Cargo.lock  # Usually keep tracked for applications.
